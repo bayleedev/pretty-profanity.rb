@@ -23,7 +23,7 @@ Different replacements do different things. For instance the `:vowel` replacemen
 
 ## Creating Custom Replacements
 To create your own sanitization rules, open the class up, add your method and add it to your configuration.
-~~~
+~~~ ruby
 class Sanitize
   def reverse(word)
     word.downcase.reverse
