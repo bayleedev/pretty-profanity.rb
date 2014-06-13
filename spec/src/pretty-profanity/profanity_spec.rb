@@ -16,6 +16,10 @@ describe PrettyProfanity::Profanity do
         expect(PrettyProfanity::Profanity.offensive('I love php and asp! But not ugly .net.')).to eq(['php', 'asp'])
       end
 
+      it 'doesnt break when I give it nil' do
+        expect(PrettyProfanity::Profanity.offensive(nil)).to eq([])
+      end
+
   end
 
   describe '.profane?' do
