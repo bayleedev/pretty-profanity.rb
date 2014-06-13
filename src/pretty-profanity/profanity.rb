@@ -24,6 +24,12 @@ module PrettyProfanity
         text
       end
 
+      def offensive(text)
+        blacklist.select do |word|
+          true if text.match(Word.new(word).to_regex)
+        end
+      end
+
     end
 
   end

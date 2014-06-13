@@ -2,6 +2,22 @@ require 'spec_helper'
 
 describe PrettyProfanity::Profanity do
 
+  describe '.offensive' do
+
+      before do
+        PrettyProfanity::Profanity.configure do |config|
+          config.blacklist = ['php', 'asp', '.net']
+          config.whitelist = ['ugly php', 'ugly asp', 'ugly .net']
+          config.replacement = :none
+        end
+      end
+
+      it 'returns a list of offensive words' do
+        expect(PrettyProfanity::Profanity.offensive('I love php and asp! But not ugly .net.')).to eq(['php', 'asp'])
+      end
+
+  end
+
   describe '.profane?' do
 
     context 'a blacklist word' do
