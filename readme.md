@@ -18,6 +18,12 @@ Phrases that contain a word from the whitelist that you do not wish to remove. F
 
 ### Replacements
 Different replacements do different things. For instance the `:vowel` replacement just replaces vowels with stars, where the `:none` just deletes the word.
+* `:none` - Deletes the entire word.
+* `:star` - Stars the entire word.
+* `:vowels` - Stars just the vowels.
+* `:garbled` - Replaces each letter with garbled text `$@!#%`.
+* `:L337` - Replaces every character with 1337 speak.
+* `:piglatin` - Converts word to piglatin.
 
 ## Creating Custom Replacements
 To create your own sanitization rules, open the class up, add your method and add it to your configuration.
