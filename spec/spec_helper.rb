@@ -5,11 +5,8 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-dir = File.dirname(__FILE__) + "/../src/pretty-profanity"
 require 'pry'
-require "#{dir}/profanity.rb"
-require "#{dir}/sanitize.rb"
-require "#{dir}/word.rb"
+require File.dirname(__FILE__) + "/../src/pretty-profanity"
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
