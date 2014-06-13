@@ -1,6 +1,9 @@
 ## Pretty Profanity
 Cleans up profanity in text.
 
+[![Build Status](https://travis-ci.org/blainesch/pretty-profanity.rb.svg?branch=master)](https://travis-ci.org/blainesch/pretty-profanity.rb)
+[![Code Climate](https://codeclimate.com/github/blainesch/pretty-profanity.rb.png)](https://codeclimate.com/github/blainesch/pretty-profanity.rb)
+
 ## Setup
 ~~~ ruby
 PrettyProfanity::Profanity.configure do |config|
