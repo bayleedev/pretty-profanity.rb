@@ -1,10 +1,9 @@
-## Pretty Pirate
-For pirates who don't want to curse like one.
-
+## Pretty Profanity
+Cleans up profanity in text.
 
 ## Setup
 ~~~ ruby
-PrettyPirate::Pirate.configure do |config|
+PrettyProfanity::Profanity.configure do |config|
   config.blacklist = ['foo', 'bar']
   config.whitelist = ['foo baz']
   config.replacement = :vowels
@@ -20,7 +19,6 @@ Phrases that contain a word from the whitelist that you do not wish to remove. F
 ### Replacements
 Different replacements do different things. For instance the `:vowel` replacement just replaces vowels with stars, where the `:none` just deletes the word.
 
-
 ## Creating Custom Replacements
 To create your own sanitization rules, open the class up, add your method and add it to your configuration.
 ~~~ ruby
@@ -29,7 +27,7 @@ class Sanitize
     word.downcase.reverse
   end
 end
-PrettyPirate::Pirate.configure do |config|
+PrettyProfanity::Profanity.configure do |config|
   # ...
   config.replacement = :reverse
 end

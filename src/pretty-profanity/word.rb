@@ -1,4 +1,4 @@
-module PrettyPirate
+module PrettyProfanity
 
   class Word
 
@@ -6,7 +6,7 @@ module PrettyPirate
 
     def initialize(word)
       @word = word
-      @whitelist = Pirate.whitelist
+      @whitelist = Profanity.whitelist
     end
 
     def to_regex

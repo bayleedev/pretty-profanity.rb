@@ -1,4 +1,4 @@
-module PrettyPirate
+module PrettyProfanity
 
   class Sanitize
 

@@ -5,9 +5,9 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-dir = File.dirname(__FILE__) + "/../src/pretty-pirate"
+dir = File.dirname(__FILE__) + "/../src/pretty-profanity"
 require 'pry'
-require "#{dir}/pirate.rb"
+require "#{dir}/profanity.rb"
 require "#{dir}/sanitize.rb"
 require "#{dir}/word.rb"
 

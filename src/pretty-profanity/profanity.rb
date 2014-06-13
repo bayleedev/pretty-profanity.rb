@@ -1,6 +1,6 @@
-module PrettyPirate
+module PrettyProfanity
 
-  class Pirate
+  class Profanity
 
     class << self
 

@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe PrettyPirate::Word do
+describe PrettyProfanity::Word do
 
   before do
-    PrettyPirate::Pirate.whitelist = ['hello world', 'goodbye hello']
+    PrettyProfanity::Profanity.whitelist = ['hello world', 'goodbye hello']
   end
 
-  subject { PrettyPirate::Word.new('hello') }
+  subject { PrettyProfanity::Word.new('hello') }
 
   describe '#to_regex' do
 

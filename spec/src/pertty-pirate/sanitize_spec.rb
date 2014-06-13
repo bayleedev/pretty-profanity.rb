@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PrettyPirate::Sanitize do
+describe PrettyProfanity::Sanitize do
 
   describe '#none' do
     it 'returns an empty string' do
